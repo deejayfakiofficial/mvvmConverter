@@ -11,15 +11,17 @@ class MainViewController: UIViewController {
     
     var viewModel: MainViewModelProtocol!
     
-    @IBOutlet weak var usdTF: UITextField!
-    @IBOutlet weak var rubTF: UITextField!
+    @IBOutlet private var usdTF: UITextField!
+    @IBOutlet private var rubTF: UITextField!
+    @IBOutlet private var USDImage: UIImageView!
+    @IBOutlet weak var RUBImage: UIImageView!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = MainViewModel(view: self)
-        
+        viewModel.setupImageView(USDImage, RUBImage)
     }
 
     @IBAction func okButtonTapped(_ sender: Any) {

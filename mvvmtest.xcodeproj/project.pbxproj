@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		6D8DB64F2625BAA20096E547 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB64E2625BAA20096E547 /* MainModel.swift */; };
 		6D8DB6542625BACC0096E547 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB6532625BACC0096E547 /* MainViewModel.swift */; };
 		6D8DB65C2625C2170096E547 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8DB65B2625C2170096E547 /* NetworkService.swift */; };
+		6D93DC652636F9BC0096C3B3 /* DownloadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D93DC642636F9BC0096C3B3 /* DownloadImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		6D8DB64E2625BAA20096E547 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		6D8DB6532625BACC0096E547 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		6D8DB65B2625C2170096E547 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6D93DC642636F9BC0096C3B3 /* DownloadImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageService.swift; sourceTree = "<group>"; };
 		988DECBA220E193754C269D0 /* Pods-mvvmtest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mvvmtest.debug.xcconfig"; path = "Target Support Files/Pods-mvvmtest/Pods-mvvmtest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				6D8DB65B2625C2170096E547 /* NetworkService.swift */,
+				6D93DC642636F9BC0096C3B3 /* DownloadImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,7 +156,6 @@
 				988DECBA220E193754C269D0 /* Pods-mvvmtest.debug.xcconfig */,
 				6220C27D398E5CE1270F380B /* Pods-mvvmtest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -272,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D8DB6542625BACC0096E547 /* MainViewModel.swift in Sources */,
+				6D93DC652636F9BC0096C3B3 /* DownloadImageService.swift in Sources */,
 				6D8DB65C2625C2170096E547 /* NetworkService.swift in Sources */,
 				6D8DB64F2625BAA20096E547 /* MainModel.swift in Sources */,
 				6D8DB6382625BA1A0096E547 /* MainViewController.swift in Sources */,

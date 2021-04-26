@@ -4,11 +4,12 @@
 //
 //  Created by Stanislav Terentyev on 13.04.2021.
 //
+import UIKit
 
 protocol MainViewModelProtocol: class {
     var view: MainViewProtocol! { get set }
-    
     func getOkButtonTapped(_ usd: String?)
+    func setupImageView(_ usdImageView: UIImageView, _ rubImageView: UIImageView)
 }
 
 protocol MainViewProtocol: class {
@@ -16,6 +17,7 @@ protocol MainViewProtocol: class {
 }
 
 class MainViewModel: MainViewModelProtocol {
+    
     var dollars: Double = 0
     var view: MainViewProtocol!
     var model: MainModel! {
@@ -41,6 +43,10 @@ class MainViewModel: MainViewModelProtocol {
         NetworkService.shared.fetchJSON { (model) in
             self.model = model
         }
+    }
+    
+    func setupImageView(_ usdImageView: UIImageView, _ rubImageView: UIImageView) {
+        DownloadImageService.shared.setupImageView(usdImageView, rubImageView)
     }
 }
 

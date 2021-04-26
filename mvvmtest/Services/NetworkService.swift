@@ -13,8 +13,10 @@ class NetworkService {
     
     private init () {}
     
+    let url = "https://open.exchangerate-api.com/v6/latest"
+    
     func fetchJSON (completion: @escaping (MainModel) -> Void) {
-        AF.request("https://open.exchangerate-api.com/v6/latest").response { responseData in
+        AF.request(url).response { responseData in
             guard let data = responseData.data else { return }
             do {
                 let results = try JSONDecoder().decode(MainModel.self, from: data)

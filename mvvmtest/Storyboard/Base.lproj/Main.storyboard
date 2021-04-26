@@ -45,6 +45,22 @@
                                     <action selector="okButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VIO-EB-ioB"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bvD-xC-YNe">
+                                <rect key="frame" x="40" y="207" width="100" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="RJk-6x-IJX"/>
+                                    <constraint firstAttribute="width" constant="100" id="lcp-t3-ieD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WGB-Kl-z9i">
+                                <rect key="frame" x="274" y="207" width="100" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="F08-1Y-K9q"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="SLY-fd-lmt"/>
+                                    <constraint firstAttribute="height" constant="64" id="Tft-8p-Fze"/>
+                                    <constraint firstAttribute="width" constant="100" id="fSV-W7-Gog"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,12 +68,18 @@
                             <constraint firstItem="y5m-3R-BSK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="5lj-6E-RJ7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JDU-zV-ujN" secondAttribute="trailing" constant="40" id="B3x-xl-25Y"/>
                             <constraint firstItem="y5m-3R-BSK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="HYX-gv-oBk"/>
+                            <constraint firstItem="bvD-xC-YNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="L9Z-gT-6x1"/>
                             <constraint firstItem="JDU-zV-ujN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="Pu1-mX-b9H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WGB-Kl-z9i" secondAttribute="trailing" constant="40" id="RtS-Uy-Jkl"/>
+                            <constraint firstItem="y5m-3R-BSK" firstAttribute="top" secondItem="bvD-xC-YNe" secondAttribute="bottom" constant="23" id="U0t-jy-4bt"/>
                             <constraint firstItem="FPU-t4-YaF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V1W-5G-uVt"/>
+                            <constraint firstItem="JDU-zV-ujN" firstAttribute="top" secondItem="WGB-Kl-z9i" secondAttribute="bottom" constant="23" id="btc-x3-fSp"/>
                             <constraint firstItem="FPU-t4-YaF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="334" id="hSd-ro-Utq"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="RUBImage" destination="WGB-Kl-z9i" id="cYg-AY-ckT"/>
+                        <outlet property="USDImage" destination="bvD-xC-YNe" id="AtB-vU-IXv"/>
                         <outlet property="rubTF" destination="JDU-zV-ujN" id="neu-SX-VjR"/>
                         <outlet property="usdTF" destination="y5m-3R-BSK" id="Bim-qV-daY"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="WOZ-cX-Gzw"/>
@@ -65,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-146" y="89"/>
+            <point key="canvasLocation" x="-146.37681159420291" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>

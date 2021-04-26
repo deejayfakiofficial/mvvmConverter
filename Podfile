@@ -7,5 +7,7 @@ target 'mvvmtest' do
 
   # Pods for mvvmtest
 pod 'Alamofire', '~> 5.2'
+pod 'lottie-ios'
+pod 'Kingfisher', '~> 6.0'
 
 end
